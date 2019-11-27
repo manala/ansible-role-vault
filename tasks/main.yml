@@ -1,0 +1,18 @@
+---
+
+# Install
+- import_tasks: install.yml
+  tags:
+    - manala_vault
+
+# Config
+- import_tasks: config.yml
+  tags:
+    - manala_vault
+
+# Services
+- import_tasks: services.yml
+  tags:
+    - manala_vault
+    - manala_vault.services
+    - manala.services
